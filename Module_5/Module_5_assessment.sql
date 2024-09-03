@@ -58,5 +58,5 @@ GROUP BY COMPANY_CODE;
 
 
 -- Write the sql query to find the average total for all the product mention in the table
-SELECT AVG(PRO_PRICE) AS AVG_PRICE FROM PRODUCT;
+SELECT SUM(AVG(PRO_PRICE)) AS AVG_PRICE FROM PRODUCT GROUP BY PRO_ID;
  
